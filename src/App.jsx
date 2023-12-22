@@ -1,0 +1,17 @@
+import React from "react";
+import Login from "./components/Login";
+import { Routes, Route } from "react-router-dom";
+import Dashboard from "./components/Dashboard";
+
+const App = () => {
+  return (
+    <div>
+      <Routes>
+        <Route path="/task4/" element={<Login />} />
+        <Route path="/home" element={<Dashboard />} />
+      </Routes>
+    </div>
+  );
+};
+
+export default App;
